@@ -1,9 +1,9 @@
-const express = require("express");
+const express = require("express"); 
 const app = express();
 const connectDB = require("./config/db");
 const leaderboardRoutes = require("./routes/leaderboard");
 const cors = require("cors");
-
+require('dotenv').config();
 connectDB();
 
 app.use(cors());
